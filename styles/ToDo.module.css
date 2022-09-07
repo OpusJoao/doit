@@ -1,0 +1,44 @@
+.todo_box{
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #a7a7a7;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  word-break: break-word;
+  align-items: center;
+}
+
+.todo_box_body{
+  color: white;
+  width: 85%;
+}
+
+.todo_box_action{
+  height: 100%;
+  width: auto;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.todo_box_button{
+  border-style: none;
+  background: transparent;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.todo_box_button_check{
+  display: flex;
+  padding: .5rem;
+  border-style: none;
+  background: green;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+}
