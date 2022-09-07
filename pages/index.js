@@ -54,6 +54,7 @@ export default function Home() {
           <Box style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <h2>Para fazer amanhã</h2>
             {todos.map(val => <ToDoBox 
+              key={val?.id}
               text={val?.text}
               status={val?.status}
               id={val?.id}
