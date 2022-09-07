@@ -1,14 +1,11 @@
 import { useState } from 'react'
+import { useTodo } from '../lib/TodoContext'
 import styles from '../styles/Home.module.css'
 import Box from './components/box'
 import ToDoBox from './components/todoBox'
 export default function Home() {
   const [currentTodo, setCurrentTodo] = useState('')
-  const [todos, setTodos] = useState([
-    {text: 'Terminar app', status: 'inProgress'},
-    {text: 'Iniciar app', status: 'complete'},
-
-  ])
+  const {todos, setTodos} = useTodo()
 
   function addTodo(){
     let currentTodos = todos
